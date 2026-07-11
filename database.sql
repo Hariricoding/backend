@@ -1,5 +1,4 @@
-CREATE DATABASE IF NOT EXISTS uas_store;
-USE uas_store;
+-- Railway provides the DB
 
 CREATE TABLE IF NOT EXISTS Products (
   id INT AUTO_INCREMENT PRIMARY KEY,
