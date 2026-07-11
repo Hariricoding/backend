@@ -42,7 +42,7 @@ router.post('/', async (req, res) => {
 
     // Format WhatsApp Link
     // Defaulting to the owner's WhatsApp number. You should replace this with the actual WA number or use env variable.
-    const waNumber = process.env.WA_OWNER_NUMBER || '6281234567890';
+    const waNumber = process.env.WA_PHONE || process.env.WA_OWNER_NUMBER || '6285692269856';
     const waMessage = encodeURIComponent(orderDetails);
     const waLink = `https://wa.me/${waNumber}?text=${waMessage}`;
 
