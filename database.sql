@@ -27,10 +27,4 @@ CREATE TABLE IF NOT EXISTS Order_Items (
   FOREIGN KEY (product_id) REFERENCES Products(id) ON DELETE CASCADE
 );
 
--- Insert dummy data
-INSERT INTO Products (name, description, price, stock, image_url) VALUES 
-('Laptop Asus ROG', 'High performance gaming laptop', 15000000, 10, 'https://via.placeholder.com/150'),
-('MacBook Pro M2', 'Apple M2 chip for creators', 20000000, 5, 'https://via.placeholder.com/150'),
-('Mechanical Keyboard', 'RGB Mechanical Keyboard Blue Switch', 500000, 50, 'https://via.placeholder.com/150');
-ALTER TABLE Products MODIFY COLUMN image_url LONGTEXT;  
- 
+ALTER TABLE Products MODIFY COLUMN image_url LONGTEXT
